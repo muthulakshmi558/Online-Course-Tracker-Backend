@@ -23,9 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y!#346!8k)2qf3tyl3c#=(o8$r2&5v+*95oo90=@h$0vt(o--6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "online-course-tracker-backend.onrender.com",
+]
+
 
 
 # Application definition
@@ -57,7 +62,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5174",
+    "https://online-course-tracker-frontend.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True 
